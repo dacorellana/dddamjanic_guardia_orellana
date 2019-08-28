@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:700&display=swap');
-
-/* 
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+/*
 
 Así se escriben los comentario en CSS.
 Siempre se abren con slash asterisco, y
@@ -15,23 +13,32 @@ se cierran con asterisco slash.
 }
 
 body{
-    font-family:'DM Sans', sans-serif;
+    font-family:'Raleway', sans-serif;
     font-weight:400;
     color:#373737;
     background-color:#FFFFFF; /*el primer par es R, segundo es G y tercero es B*/
 }
 
-h1, h2{
-    font-family:'Space Mono', monospace;
+h1{
+  font-family:'Raleway', monospace;
+  color:#FFFFFF; /* lo básico, para evitar problemas */
+  color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */
+  text-align:center;
+  letter-spacing:0.1em;
+  font-weight:700;
+}
+
+h2{
+    font-family:'Raleway', monospace;
     color:#FFFFFF; /* lo básico, para evitar problemas */
     color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */
     text-align:center;
     letter-spacing:0.1em;
-    font-weight:700;
+    font-weight:400;
 }
 
 h1{
-    font-size:3rem;
+    font-size:4rem;
 }
 
 h2{
@@ -54,7 +61,7 @@ h3{
 }
 
 h5, h6{
-    font-weight:700;     
+    font-weight:700;
 }
 
 a{
@@ -89,9 +96,9 @@ main{
     width:100%;
 }
 
-/* 
-Puedes revisar detalles sobre el siguiente uso de flex 
-en https://www.taniarascia.com/easiest-flex-grid-ever/ 
+/*
+Puedes revisar detalles sobre el siguiente uso de flex
+en https://www.taniarascia.com/easiest-flex-grid-ever/
 */
 
 #equipo {
@@ -158,51 +165,51 @@ en https://www.taniarascia.com/easiest-flex-grid-ever/
 }
 
 .integrante:nth-of-type(1){
-    background-color:#F83277;
-    background-image:url('media/integrante-1a.png');
+    background-color:#DEA94D;
+    background-image:url('media/Domi1.png');
     background-position: bottom right;
-    background-size:auto 90%;
+    background-size:auto 100%;
     background-repeat: no-repeat;
 }
 
 
 .integrante:nth-of-type(2){
-    background:#F93332;
-    background-image:url('media/integrante-2a.png');
+    background:#708C88;
+    background-image:url('media/Yuyu1.png');
     background-position: bottom right;
-    background-size:auto 90%;
+    background-size:auto 100%;
     background-repeat: no-repeat;
 }
 
 .integrante:nth-of-type(3){
-    background:#FA7633;
-    background-image:url('media/integrante-3a.png');
+    background:#CF7C1E;
+    background-image:url('media/Dani1.png');
     background-position: bottom right;
-    background-size:auto 90%;
+    background-size:auto 100%;
     background-repeat: no-repeat;
 }
 
 .integrante:nth-of-type(1):hover{
     background-color:#c2185b;
-    background-image:url('media/integrante-1b.png');
+    background-image:url('media/Domi2.png');
     background-position: bottom right;
-    background-size:auto 90%;
+    background-size:auto 100%;
     background-repeat: no-repeat;
 }
 
 .integrante:nth-of-type(2):hover{
     background:#d32f2f;
-    background-image:url('media/integrante-2b.png');
+    background-image:url('media/Yuyu2.png');
     background-position: bottom right;
-    background-size:auto 90%;
+    background-size:auto 100%;
     background-repeat: no-repeat;
 }
 
 .integrante:nth-of-type(3):hover{
     background:#ef6c00;
-    background-image:url('media/integrante-3b.png');
+    background-image:url('media/Dani2.png');
     background-position: bottom right;
-    background-size:auto 90%;
+    background-size:auto 100%;
     background-repeat: no-repeat;
 }
 
