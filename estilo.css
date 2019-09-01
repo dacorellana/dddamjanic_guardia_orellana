@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 /*
 
 Así se escriben los comentario en CSS.
@@ -13,37 +14,37 @@ se cierran con asterisco slash.
 }
 
 body{
-    font-family:'Raleway', sans-serif;
+    font-family:'Open Sans', sans-serif;
     font-weight:400;
-    color:#373737;
+    color:#333;
     background-color:#FFFFFF; /*el primer par es R, segundo es G y tercero es B*/
 }
-
 h1{
-  font-family:'Raleway', monospace;
-  color:#FFFFFF; /* lo básico, para evitar problemas */
-  color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */
-  text-align:center;
+  font-family:'Roboto Mono', monospace;
+  color:#708C88; /* lo básico, para evitar problemas */
+  color:rgba(222,169,77); /* si el navegador lo entiende, lo usa */
+  text-align:left;
   letter-spacing:0.1em;
   font-weight:700;
 }
 
 h2{
-    font-family:'Raleway', monospace;
+    font-family:'Roboto Mono', monospace;
     color:#FFFFFF; /* lo básico, para evitar problemas */
     color:rgba(255,255,255,0.8); /* si el navegador lo entiende, lo usa */
-    text-align:center;
+    text-align:left;
     letter-spacing:0.1em;
     font-weight:400;
 }
-
 h1{
     font-size:4rem;
+    padding-left: 12rem;
 }
 
 h2{
     font-size:2rem;
     letter-spacing:0.1em;
+    padding-left: 12rem;
 }
 
 @media screen and (max-width: 768px){
@@ -59,18 +60,25 @@ h2{
 h3{
     display:none;
 }
-
+h4{
+    font-family:'Roboto Mono', monospace;
+    color:#FFFFFF; /* lo básico, para evitar problemas */
+    color:rgb(51,51,51); /* si el navegador lo entiende, lo usa */
+    text-align:left;
+    letter-spacing:0.1em;
+    font-weight:700;
+}
 h5, h6{
     font-weight:700;
 }
 
 a{
-    color:rgb(155,0,0);
-    text-decoration:none;
+    color:rgba(255,255,255,0.8);
+    text-decoration:underline;
 }
 
 a:hover{
-    color:rgb(255,0,0);
+    color:rgb(68,95,91);
     text-decoration:underline;
 }
 
@@ -226,10 +234,10 @@ AHORA VAMOS POR PORTAFOLIO
 }
 
 .item {
-    width:23%;
+    width:31%;
     margin:1%;
     color:#333;
-    background:#eee;
+    background:#9fbcb8;
     box-shadow:0 0 5px rgba(0,0,0,.5);
 }
 
@@ -237,16 +245,16 @@ AHORA VAMOS POR PORTAFOLIO
     .item{
         width:48%;
         margin:1%;
-        background:#333;
-        color:#eee;
+        background:#9fbcb8;
+        color:#333;
     }
 }
  @media screen and (max-width: 576px){
      .item{
          width:96%;
          margin:2%;
-         background:#000;
-         color:#FFF;
+         background:#9fbcb8;
+         color:#333;
     }
 }
  .item:hover{
@@ -259,11 +267,11 @@ AHORA VAMOS POR PORTAFOLIO
      width:100%;
      height:auto;
      margin-bottom:-4px;
-     filter: grayscale(1);
+     filter: custom()(1);
 }
  .item:hover figure img{
      transform:scale(2);
-     filter: grayscale(0);
+     filter: blur(0);
      transition:all ease-out 1s;
 }
  .item h4{
