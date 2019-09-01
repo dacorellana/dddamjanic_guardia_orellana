@@ -267,7 +267,6 @@ AHORA VAMOS POR PORTAFOLIO
      width:100%;
      height:auto;
      margin-bottom:-4px;
-     filter: custom()(1);
 }
  .item:hover figure img{
      transform:scale(2);
